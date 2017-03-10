@@ -60,16 +60,16 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>Barista</h1>
+                        <h1>Mobile Coffee Service</h1>
                         <h2>Sign up</h2>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li><a href="index.html" class="btn btn-default btn-lg"><i class="fa fa-link" ></i> <span class="">Chain Coffee</span></a>
                             </li>
-                            <!-- <li><a href="barista.html" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-user" ></i> <span class="">Barista</span></a>
-                            </li> -->
-                            <li><a href="mobilecoffeeservices.html" class="btn btn-default btn-lg"><i class="fa fa-users" ></i> <span class="">Mobile Coffee Services</span></a>
+                            <li><a href="barista.html" class="btn btn-default btn-lg"><i class="fa fa-user" ></i> <span class="">Barista</span></a>
                             </li>
+                            <!-- <li><a href="mobilecoffeeservices.html" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-users" ></i> <span class="">Mobile Coffee Services</span></a>
+                            </li> -->
                             <!-- <li><a href="https://twitter.com/Chain_CoffeeBar" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
                             </li>
                             <li><a href="https://facebook.com/ChainCoffeeBar" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name"></span></a>
@@ -96,27 +96,29 @@
                 <div style="text-align: center">
                     <!-- <hr class="section-heading-spacer">
  -->                    <!-- <div class="clearfix"></div> -->
-                    <h2 class="section-heading">Sign up as a Barista</h2>
+                    <h2 class="section-heading">Sign up as a Mobile Coffee Service</h2>
                 </div>
                 <div class="col-lg-6">
                     <h3>Personal Information</h3>
                     <form >
                         <!-- How do I change the input box width? -->
+                        <label>Company Name: <input type="name" id="companyname" name="firstname" value = "Company Name" required></label>
+                        <br>
                         <label>First Name: <input type="firstname" id="firstname" name="firstname" value = "First Name" required></label>
                         <label>Last Name: <input type="surname" id="surname" name="surname" value = "Last Name" required></label>
                         <br>
 
-                        <label>Physical Address 1: <input class="address" type="address1" id="address1" name="address1" value = "" required></label>
-                        <label>Physical Address 2: <input class="address" type="address2" id="address2" name="address2" value = "" required></label>
-                        <label>City/Town: <input type="city" id="city" name="city" value = "" required></label>
-                        <label>Code: <input type="zipcode" id="zipcode" name="zipcode" value = "" required></label>
+                        <label>Physical Address 1: <input class="address" type="address1" id="address1" name="address1" value = "" ></label>
+                        <label>Physical Address 2: <input class="address" type="address2" id="address2" name="address2" value = "" ></label>
+                        <label>City/Town: <input type="city" id="city" name="city" value = "" ></label>
+                        <label>Code: <input type="zipcode" id="zipcode" name="zipcode" value = "" ></label>
                         <br>
 
                         <label>Contact Number: <input type="contactnumber" id="contactnumber" name="contactnumber" value = "" required></label>
                         <label>Preferred email address: <input type="email" id="email_addr" name="email1" value = "me@me.com" required></label>
                         <label>Repeat email address: <input type="email" id="email_repeat" name="email2" required onchange="check()"></label>
 
-                        <input type = 'submit' value = "Confirm Emails!">
+                        <input type = 'submit' value = "Confirm">
                     </form>
                 </div>
                 <div class="col-lg-6">
@@ -136,69 +138,13 @@
 
         <div class="container">
             <div class="row col-lg-10 col-lg-offset-1 col-sm-12">
-                <h3>Work Experience</h3>
+                <h3>Company Description</h3>
                 <form>  
-                    <label>1. <input class="workexp" type="description" name="workexp" value="At Company As Barista"> </label><br>
-                      
-                    <label>2. <input class="workexp" type="description" name="workexp" value="At Company As Barista"> </label><br>
-                      
-                    <label>3. <input class="workexp" type="description" name="workexp" value="At Company As Barista"> </label><br>
-                      
-                    <!-- <input type = "submit"> -->
+                    <label><input class="company-description" type="description" name="companydescription" value="Type description here"> </label><br>
+                    <input type = "submit">
                 </form>
             </div>
 
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-b" id="contentEvents">
-
-        <div class="container">
-
-            <div class="row col-lg-10 col-lg-offset-1 col-sm-12">
-                <h3>Work Days Available</h3>
-                <form>  
-                    <label><input type="checkbox" name="day"  value = "day"> Monday</label>
-                    <label><input type="checkbox" name="day"  value = "day"> Tuesday</label>
-                    <label><input type="checkbox" name="day"  value = "day"> Wedday</label>
-                    <label><input type="checkbox" name="day"  value = "day"> Thursday</label>
-                    <label><input type="checkbox" name="day"  value = "day"> Friday</label>
-                    <label><input type="checkbox" name="day"  value = "day"> Saturday</label>
-                    <label><input type="checkbox" name="day"  value = "day"> Sunday</label>
-                    <!-- <input type = "submit"> -->
-                </form>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    <div class="content-section-a" id="contentEvents">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <h3>Make a booking at Chain Coffee</h3>
-                    <i class="fa fa-calendar fa-5x" aria-hidden="true"></i>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <form>  
-                        <label>1. Select a date: <input type="date" name="workexp" value="At Company As Barista"> </label><br>
-                          
-                        <label>2. Select a date: <input type="date" name="workexp" value="At Company As Barista"> </label><br>
-                          
-                        <label>3. Select a date: <input type="date" name="workexp" value="At Company As Barista"> </label><br>
-                          
-                        <input type = "submit">
-                    </form>
-                </div>
-            </div>
-            <!-- /.row -->
         </div>
         <!-- /.container -->
 
