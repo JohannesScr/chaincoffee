@@ -1,4 +1,4 @@
-f<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,14 +10,14 @@ f<!DOCTYPE html>
     <title>Chain Coffee</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="./../../css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom Google Web Font -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./../../font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Add custom CSS here -->
-    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="./../../css/landing-page.css" rel="stylesheet">
 
 </head>
 
@@ -38,13 +38,13 @@ f<!DOCTYPE html>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">Chain Coffee</a>
+                    <li><a href="./../../index.html">Chain Coffee</a>
                     </li>
-                    <li><a href="barista.html">Barista</a>
+                    <li><a href="./../../src/barista/barista.html">Barista</a>
                     </li>
-                    <li><a href="mobilecoffeeservices.html">Mobile Coffee</a>
+                    <li><a href="./../../src/mobilecoffee/mobilecoffeeservices.html">Mobile Coffee</a>
                     </li>
-                    <li><a href="contact.html">Contact</a>
+                    <li><a href="./../../src/chain/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -64,11 +64,11 @@ f<!DOCTYPE html>
                         <h2>Sign up</h2>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
-                            <li><a href="index.html" class="btn btn-default btn-lg"><i class="fa fa-link" ></i> <span class="">Chain Coffee</span></a>
+                            <li><a href="./../../index.html" class="btn btn-default btn-lg"><i class="fa fa-link" ></i> <span class="">Chain Coffee</span></a>
                             </li>
-                            <!-- <li><a href="barista.html" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-user" ></i> <span class="">Barista</span></a>
+                            <!-- <li><a href="./../../src/barista/barista.html" class="btn btn-default btn-lg"><i class="fa fa-user" ></i> <span class="">Barista</span></a>
                             </li> -->
-                            <li><a href="mobilecoffeeservices.html" class="btn btn-default btn-lg"><i class="fa fa-users" ></i> <span class="">Mobile Coffee Services</span></a>
+                            <li><a href="./../../src/mobilecoffee/mobilecoffeeservices.html"  class="btn btn-default btn-lg"><i class="fa fa-users" ></i> <span class="">Mobile Coffee Services</span></a>
                             </li>
                             <!-- <li><a href="https://twitter.com/Chain_CoffeeBar" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
                             </li>
@@ -96,23 +96,7 @@ f<!DOCTYPE html>
                 <div style="text-align: center">
                     <!-- <hr class="section-heading-spacer">
  -->                    <!-- <div class="clearfix"></div> -->
-                    <h2 class="section-heading">Get a quote</h2>
-                </div>
-                <div class="col-lg-6">
-                    <h3>Function Details</h3>
-                    <form>  
-                        <label>Number of Guests:<input type="number" id="nguests" name="nguests" required></label>
-                        (This would include the number of guests you expect to have at the function)
-                        <label>From:<input type="time" name="starttime" value="xx:00"></label>
-                        <label>To:<input type="time" name="endtime" value="xx:00"></label>
-                        (The times refer to the time that coffee should be served at the function)
-                        <br>
-                        <br>
-                        <label>Function Venue: <input type="venue" id="venue" name="venue" value = "Name" required></label>
-                        <label>City/Town: <input type="city" id="city" name="city" value = "" required></label>
-                        <label>Provence: <input type="name" id="provence" name="provence" value = "" required></label>
-                        <br>
-                    </form>
+                    <h2 class="section-heading">Sign up as a Barista</h2>
                 </div>
                 <div class="col-lg-6">
                     <h3>Personal Information</h3>
@@ -122,15 +106,23 @@ f<!DOCTYPE html>
                         <label>Last Name: <input type="surname" id="surname" name="surname" value = "Last Name" required></label>
                         <br>
 
+                        <label>Physical Address 1: <input class="address" type="address1" id="address1" name="address1" value = "" required></label>
+                        <label>Physical Address 2: <input class="address" type="address2" id="address2" name="address2" value = "" required></label>
+                        <label>City/Town: <input type="city" id="city" name="city" value = "" required></label>
+                        <label>Code: <input type="zipcode" id="zipcode" name="zipcode" value = "" required></label>
+                        <br>
+
                         <label>Contact Number: <input type="contactnumber" id="contactnumber" name="contactnumber" value = "" required></label>
                         <label>Preferred email address: <input type="email" id="email_addr" name="email1" value = "me@me.com" required></label>
                         <label>Repeat email address: <input type="email" id="email_repeat" name="email2" required onchange="check()"></label>
 
-                        <!-- <input type = 'submit' value = "Confirm"> -->
+                        <input type = 'submit' value = "Confirm Emails!">
                     </form>
                 </div>
-                <div class="row">
-                    <input type = 'submit' value = "Confirm">
+                <div class="col-lg-6">
+                    <h3>Insert Profile Picture</h3>
+                    <img class="img-responsive" src="" alt="Insert Image">
+                    <input type = 'submit' value = "Update Profile Picture">
                 </div>
                 
             </div>
@@ -144,49 +136,69 @@ f<!DOCTYPE html>
 
         <div class="container">
             <div class="row col-lg-10 col-lg-offset-1 col-sm-12">
-                <h3>Select Mobile Coffee Service Provider</h3>
-                <div class="col-lg-6 col-sm-6">
-                    <div>
-                       <i class="fa fa-calendar fa-5x" aria-hidden="true"></i> 
-                    </div>
-                    <br>
-                    <div class="center">
-                        <label>Date:<input type="date" id="functiondate" name="date" required></label>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                Once the date has been selected, the dropdown list should automatically filter to display only those mobile coffee services which are available on the selected date.
-                    <form>  
-                        <div class="dropdown">
-                            <button class="dropbtn">Dropdown</button>
-                            <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="dropdown">
-                            <button class="dropbtn">Dropdown</button>
-                            <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="dropdown">
-                            <button class="dropbtn">Dropdown</button>
-                            <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                            </div>
-                        </div>
-                    </form> 
-                </div>
+                <h3>Work Experience</h3>
+                <form>  
+                    <label>1. <input class="workexp" type="description" name="workexp" value="At Company As Barista"> </label><br>
+                      
+                    <label>2. <input class="workexp" type="description" name="workexp" value="At Company As Barista"> </label><br>
+                      
+                    <label>3. <input class="workexp" type="description" name="workexp" value="At Company As Barista"> </label><br>
+                      
+                    <!-- <input type = "submit"> -->
+                </form>
             </div>
 
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b" id="contentEvents">
+
+        <div class="container">
+
+            <div class="row col-lg-10 col-lg-offset-1 col-sm-12">
+                <h3>Work Days Available</h3>
+                <form>  
+                    <label><input type="checkbox" name="day"  value = "day"> Monday</label>
+                    <label><input type="checkbox" name="day"  value = "day"> Tuesday</label>
+                    <label><input type="checkbox" name="day"  value = "day"> Wedday</label>
+                    <label><input type="checkbox" name="day"  value = "day"> Thursday</label>
+                    <label><input type="checkbox" name="day"  value = "day"> Friday</label>
+                    <label><input type="checkbox" name="day"  value = "day"> Saturday</label>
+                    <label><input type="checkbox" name="day"  value = "day"> Sunday</label>
+                    <!-- <input type = "submit"> -->
+                </form>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a" id="contentEvents">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <h3>Make a booking at Chain Coffee</h3>
+                    <i class="fa fa-calendar fa-5x" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <form>  
+                        <label>1. Select a date: <input type="date" name="workexp" value="At Company As Barista"> </label><br>
+                          
+                        <label>2. Select a date: <input type="date" name="workexp" value="At Company As Barista"> </label><br>
+                          
+                        <label>3. Select a date: <input type="date" name="workexp" value="At Company As Barista"> </label><br>
+                          
+                        <input type = "submit">
+                    </form>
+                </div>
+            </div>
+            <!-- /.row -->
         </div>
         <!-- /.container -->
 
@@ -247,9 +259,9 @@ f<!DOCTYPE html>
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="./../../js/jquery-1.10.2.js"></script>
+    <script src="./../../js/bootstrap.js"></script>
+    <script src="./../../js/custom.js"></script>
 
 </body>
 
